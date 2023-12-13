@@ -85,34 +85,35 @@ export default function Contact() {
 
                             const valid = validateEmail(email);
 
-                            if(valid===null) {
-                                toast.error("Invalid E-Mail address.",{duration:2000});
+                            if (name.length === 0 || email.length === 0 || msg.length === 0) {
+                                toast.error('Incomplete data.', { duration: 1000 })
                                 return;
                             }
 
-                            toast('Sending message...',{duration: 2000});
-
-                            if (name.length > 0 && email.length > 0 && msg.length > 0) {
-                                try {
-                                    let data = {
-                                        username: name,
-                                        mail: email,
-                                        message: msg
-                                    };
-                                    const response = await axios.post('https://portfolio-server-api-3n0m.onrender.com', data);
-
-                                    toast.success('Message Sent.', {
-                                        duration: 2000
-                                    });
-                                }
-                                catch (e) {
-                                    toast.error('Error sending message, try again later.', { duration: 2000 });
-                                }
-
-                                var allInputs = document.querySelectorAll('.form-point');
-                                allInputs.forEach(singleInput => singleInput.value = '');
+                            if (valid === null) {
+                                toast.error("Invalid E-Mail address.", { duration: 2000 });
+                                return;
                             }
-                            else return;
+
+                            toast('Sending message...', { duration: 2000 });
+                            try {
+                                let data = {
+                                    username: name,
+                                    mail: email,
+                                    message: msg
+                                };
+                                const response = await axios.post('https://shivangnegi.onrender.com', data);
+
+                                toast.success('Message Sent.', {
+                                    duration: 2000
+                                });
+                            }
+                            catch (e) {
+                                toast.error('Error sending message, try again later.', { duration: 2000 });
+                            }
+
+                            var allInputs = document.querySelectorAll('.form-point');
+                            allInputs.forEach(singleInput => singleInput.value = '');
                         }
                     }>
                         <span className='error-form' style={(error1 === false) ? { display: 'none' } : {}}>*Name cannot be empty</span>
