@@ -82,12 +82,15 @@ export default function Contact() {
                             if (msg.length === 0) setError3(true);
                             else setError3(false);
 
+
                             const valid = validateEmail(email);
 
                             if(valid===null) {
                                 toast.error("Invalid E-Mail address.",{duration:2000});
                                 return;
                             }
+
+                            toast('Sending message...',{duration: 2000});
 
                             if (name.length > 0 && email.length > 0 && msg.length > 0) {
                                 try {
