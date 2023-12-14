@@ -102,7 +102,7 @@ export default function Contact() {
                                     mail: email,
                                     message: msg
                                 };
-                                const response = await axios.post('https://shivangnegi.onrender.com', data);
+                                const response = await axios.post('https://portfolio-server-api.vercel.app/', data);
 
                                 toast.success('Message Sent.', {
                                     duration: 2000
