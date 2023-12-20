@@ -723,7 +723,44 @@ li {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
+  .name {
+    font-size: 26px;
+  }
+
+  .designation {
+    font-size: 14px;
+  }
+
+  .profile-pic {
+    width: 50%;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .designation {
+    font-size: 12px;
+  }
+
+  .profile-pic {
+    width: 50%;
+  }
+
+  .link {
+    font-size: 13px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
   .navigation {
     display: none;
   }
@@ -835,20 +872,4 @@ li {
   }
 }
 
-@media (max-width: 1200px) {
-  .name {
-    font-size: 20px;
-  }
 
-  .designation {
-    font-size: 12px;
-  }
-
-  .profile-pic {
-    width: 50%;
-  }
-
-  .link {
-    font-size: 13px;
-  }
-}
