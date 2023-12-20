@@ -1,4 +1,3 @@
-import './main.css';
 import resume from './Resume_ShivangNegi2.pdf'
 
 export default function About() {
@@ -18,7 +17,7 @@ export default function About() {
 
             <div className='about2'>
                 <p className='about-para'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I am Shivang Negi, a recent graduate from Graphic Era University and a Fullstack developer. I have experience in creating and maintaining web applications using various technologies such as HTML, CSS, JavaScript, Node.js, Express.js, React.js, MongoDB, and Flutter. Additionally, I am a seasoned competitive programmer and am well-versed in the core subjects of Computer Science. I enjoy learning new skills, taking on new challenges, and always aspire to become a better version of myself in the future.
                 </p>
             </div>
 

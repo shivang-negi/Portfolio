@@ -255,6 +255,11 @@ li {
   text-align: justify;
 }
 
+.about-para {
+  color:#695c5c;
+  text-shadow : 0 0 0 #695c5c;
+}
+
 .cards {
   margin-top: 2%;
   margin-left: 5%;

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './main.css';
 import axios from 'axios';
 
 import toast, { Toaster } from 'react-hot-toast';

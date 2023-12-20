@@ -1,4 +1,3 @@
-import './main.css';
 
 export default function Experience() {
     return (

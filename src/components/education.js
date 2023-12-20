@@ -1,4 +1,3 @@
-import './main.css';
 import { useState, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
