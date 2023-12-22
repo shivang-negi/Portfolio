@@ -27,7 +27,7 @@
   z-index: 999;
 }
 
-.cross:hover{
+.cross:hover {
   cursor: pointer;
 }
 
@@ -256,8 +256,8 @@ li {
 }
 
 .about-para {
-  color:#695c5c;
-  text-shadow : 0 0 0 #695c5c;
+  color: #695c5c;
+  text-shadow: 0 0 0 #695c5c;
 }
 
 .cards {
@@ -336,6 +336,7 @@ li {
   margin-right: 10%;
   margin-bottom: 1%;
   letter-spacing: 1px;
+  /* margin-bottom: 2%; */
 }
 
 .edu-item :hover {
@@ -347,6 +348,7 @@ li {
   padding: 20px;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .item1-edu {
@@ -825,6 +827,10 @@ li {
     font-size: 22px;
   }
 
+  .edu-item-row {
+    height: 30px;
+  }
+
   /*Experience*/
   .headingrow1-exp {
     font-size: 12px;
@@ -878,3 +884,14 @@ li {
 }
 
 
+.darkmode {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  margin: 0;
+  padding: 0.7%;
+  border: 2px #746e6e solid;
+  border-radius: 50%;
+  z-index: 500;
+  background-color: white;
+}

@@ -101,7 +101,7 @@ export default function Contact() {
                                     mail: email,
                                     message: msg
                                 };
-                                const response = await axios.post('https://portfolio-server-api.vercel.app/', data);
+                                await axios.post('https://portfolio-server-29dj.onrender.com', data);
 
                                 toast.success('Message Sent.', {
                                     duration: 2000
