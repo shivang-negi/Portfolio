@@ -3,7 +3,6 @@ import { CSSTransition } from 'react-transition-group';
 
 export default function Education() {
 
-    const nodeRef = useRef(null);
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);

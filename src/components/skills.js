@@ -47,7 +47,7 @@ export default function Skills() {
                     <p className='skill-text'>MongoDB</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'sqlite.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'sqlite.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>SQLite</p>
                 </div>
             </div>

@@ -2,6 +2,7 @@
   min-height: 50vh;
 } */
 
+
 .hamburger {
   position: fixed;
   display: inline;
@@ -76,7 +77,13 @@
   border: 0;
   border-radius: 45%;
   z-index: 999;
-  color: rgb(135, 154, 231);
+  color: rgba(128, 147, 211, 0.966);
+}
+
+
+.push-aside-button:hover {
+  color: rgb(68, 99, 221);
+  transition: color 200ms;
 }
 
 .push-aside-button:hover {
@@ -614,9 +621,6 @@ li {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
-
-
-
 
 
 /*Project page*/
