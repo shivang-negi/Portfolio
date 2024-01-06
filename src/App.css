@@ -1,3 +1,7 @@
+.body-element {
+  min-height: 50vh;
+}
+
 .hamburger {
   position: fixed;
   display: inline;
@@ -41,7 +45,7 @@
 
 /*  Col (image-list)  */
 .navigation {
-  background-color: azure;
+  background-color: rgb(242, 243, 247);
   width: 22%;
   display: flex;
   flex-direction: column;
@@ -55,6 +59,28 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.push-aside {
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.push-aside-button {
+  /* display: none; */
+  position: fixed;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 45%;
+  z-index: 999;
+  color: rgb(135, 154, 231);
+}
+
+.push-aside-button:hover {
+  cursor: pointer;
 }
 
 .overlay {
@@ -83,12 +109,15 @@
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .designation {
   margin-top: 2px;
   margin-bottom: 0px;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight:900;
 }
 
 .blinking {
@@ -131,8 +160,8 @@
 
 .link {
   color: #695c5c;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 550;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
   text-decoration: none;
   outline: 0;
   border-bottom: solid 1px transparent;
@@ -198,8 +227,10 @@ li {
 
 .headingrow1 {
   color: dimgrey;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   margin-bottom: 3%;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
 }
 
 .headingrow2 {
@@ -239,6 +270,8 @@ li {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
 }
 
 .resume-download:active {
@@ -282,6 +315,8 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
 }
 
 /*Education page*/
@@ -313,6 +348,8 @@ li {
   color: dimgrey;
   letter-spacing: 0.25em;
   margin-bottom: 3%;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
 }
 
 .headingrow2-edu {
@@ -337,6 +374,8 @@ li {
   margin-bottom: 1%;
   letter-spacing: 1px;
   /* margin-bottom: 2%; */
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
 }
 
 .edu-item :hover {
@@ -355,11 +394,13 @@ li {
   border: 1px solid #e6e6e6;
   padding: 1%;
   margin-left: 3%;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-bottom: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
 }
 
 .list-transition-enter {
@@ -429,6 +470,8 @@ li {
   color: dimgrey;
   letter-spacing: 0.25em;
   margin-bottom: 3%;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
 }
 
 .headingrow2-exp {
@@ -483,7 +526,7 @@ li {
 
 .job-heading {
   font-family: "Quicksand", Arial, sans-serif;
-  font-weight: bolder;
+  font-weight: 700;
   margin-bottom: 0;
   margin-top: 10px;
   font-size: larger;
@@ -491,7 +534,7 @@ li {
 
 .job-company {
   font-family: "Quicksand", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: #333333;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -499,7 +542,7 @@ li {
 
 .job-timeline {
   font-family: "Quicksand", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: #333333;
   margin-top: 3px;
   margin-bottom: 1%;
@@ -508,6 +551,8 @@ li {
 .job-point {
   margin: 3px;
   color: #333333;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
 }
 
 
@@ -524,7 +569,7 @@ li {
   flex-wrap: wrap;
   margin-top: 3%;
   margin-left: 3%;
-  margin-bottom: 7%;
+  margin-bottom: 2%;
 }
 
 .skill-item {
@@ -541,7 +586,7 @@ li {
   padding-bottom: 1vw;
   margin-top: 1vw;
   margin-right: 1vw;
-  width: 30vw;
+  width: 20vw;
 
   display: flex;
   flex-direction: row;
@@ -555,7 +600,7 @@ li {
 }
 
 .skill-item p:last-child {
-  margin-right: 30%;
+  margin-right: 0%;
   /* justify-self: center; */
 }
 
@@ -565,7 +610,7 @@ li {
 
 .skill-text {
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 
@@ -591,23 +636,27 @@ li {
   flex-direction: row;
   margin-right: 4%;
   justify-content: center;
-  align-items: center;
+  align-items: space;
   margin-top: 2%;
 }
 
 .project-details {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .project-heading {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
   color: #333333;
   margin-bottom: 0;
 }
 
 .project-skills {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
   color: #584d4d;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -622,6 +671,8 @@ li {
   padding-left: 0;
   color: #272525;
   margin-top: 8px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
 }
 
 .project-image {
@@ -661,6 +712,8 @@ li {
 
   margin-bottom: 8%;
   min-width: 300px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
 }
 
 .social-item svg:first-child {
@@ -769,6 +822,10 @@ li {
 
 @media only screen and (max-width: 900px) {
   .navigation {
+    display: none;
+  }
+
+  .push-aside {
     display: none;
   }
 

@@ -49,6 +49,7 @@ export default function Education() {
                     <h1 className='headingrow2-edu'>ACADEMIC BACKGROUND</h1>
                 </div>
             </div>
+            
             <div className='edu-list'>
 
                 <button className='edu-item' style={(show1 === true) ? item_css : item_css_collapse} onClick={click1}>

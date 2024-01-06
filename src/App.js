@@ -6,11 +6,11 @@ import Experience from './components/experience.js';
 import Projects from './components/project.js';
 import Skills from './components/skills.js';
 import { useState, useEffect } from 'react';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
 
@@ -104,12 +104,14 @@ function App() {
   const [cross, setCross] = useState({});
   const [exitNav, setExitNav] = useState(false);
   const exitNavStyle = (exitNav === false) ? ({ display: 'none' }) : ({ display: 'block' });
+  const [pushAside, setPushAside] = useState('left');
 
   useEffect(() => {
+    AOS.init();
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5
+      threshold: 0.50
     }
     const target = document.querySelectorAll('.body-element');
 
@@ -135,62 +137,66 @@ function App() {
     return;
   }, []);
 
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = (checked) => {
-    setDarkMode(checked);
-  };
-
   return (
     <Router>
 
       <div className='page'>
-        <>
-          <div className='overlay' onClick={() => {
-            setNav({});
-            setCross({});
-            setExitNav(false);
-          }} style={cross}></div>
+        <div className='overlay' onClick={() => {
+          setNav({});
+          setCross({});
+          setExitNav(false);
+        }} style={cross}></div>
 
-          <div className='navigation' style={nav}>
-            <Navbar className='navigation-body' page_no={page} />
-          </div>
+        <div id='navigation-element' className='navigation' style={nav}>
+          <Navbar className='navigation-body' page_no={page} />
+        </div>
 
-          <button className='cross' style={exitNavStyle} onClick={() => {
-            setNav({});
-            setCross({});
-            setExitNav(false);
+        <div className='push-aside'>
+          <button className='push-aside-button' onClick={() => {
+            if (pushAside === 'left') {
+              document.getElementById('navigation-element').style.display = 'none';
+              setPushAside('right');
+            }
+            else {
+              document.getElementById('navigation-element').style.display = 'block';
+              setPushAside('left');
+            }
           }}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" /></svg>
+            {(pushAside === 'left') ? <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223" />
+            </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
+            </svg>}
+
           </button>
 
-          <button className='hamburger' onClick={() => {
-            setNav({ display: 'flex', height: '120vh', position: 'fixed', width: '40vw' });
-            setCross({ height: '100vh', width: '100vw', backgroundColor: 'transparent', position: 'fixed' });
-            setExitNav(true);
-          }
-          }>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" /></svg>
-          </button>
+        </div>
 
-          <div className='content'>
-            <About />
-            <Education />
-            <Experience />
-            <Skills />
-            <Projects />
-            <Contact />
-          </div>
-        </>
+        <button className='cross' style={exitNavStyle} onClick={() => {
+          setNav({});
+          setCross({});
+          setExitNav(false);
+        }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" /></svg>
+        </button>
 
-        {/* <DarkModeSwitch
-          className='darkmode'
-          checked={isDarkMode}
-          onChange={toggleDarkMode}
-          size={30}
-          sunColor='#f0c519'
-          moonColor='#1e2733'
-        /> */}
+        <button className='hamburger' onClick={() => {
+          setNav({ display: 'flex', height: '120vh', position: 'fixed', width: '40vw' });
+          setCross({ height: '100vh', width: '100vw', backgroundColor: 'transparent', position: 'fixed' });
+          setExitNav(true);
+        }
+        }>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" /></svg>
+        </button>
+
+        <div className='content'>
+          <About />
+          <Education />
+          <Experience />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
 
       </div>
     </Router>
