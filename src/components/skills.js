@@ -12,38 +12,38 @@ export default function Skills() {
 
             <div className='skills-page'>
                 <div className='skill-item'>
-                    <img src={'html5.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'html5.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>HTML5</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'css.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'css.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>CSS</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'c++.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'c++.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>C++</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'react.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'react.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>React.js</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'node.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'node.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>Node.js</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'express.jpg'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'express.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>Express.js</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'flutter.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'flutter.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>Flutter</p>
                 </div><div className='skill-item'>
-                    <img src={'python.svg'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'python.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>Python</p>
                 </div>
                 <div className='skill-item'>
-                    <img src={'mongo.png'} className='skill-icon' alt='Cant load skill image'></img>
+                    <img src={'mongo.webp'} className='skill-icon' alt='Cant load skill image'></img>
                     <p className='skill-text'>MongoDB</p>
                 </div>
                 <div className='skill-item'>
