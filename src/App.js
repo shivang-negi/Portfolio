@@ -6,8 +6,6 @@ import Experience from './components/experience.js';
 import Projects from './components/project.js';
 import Skills from './components/skills.js';
 import { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import {
   BrowserRouter as Router,
@@ -107,7 +105,6 @@ function App() {
   const [pushAside, setPushAside] = useState('left');
 
   useEffect(() => {
-    AOS.init();
     const options = {
       root: null,
       rootMargin: "0px",
