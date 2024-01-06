@@ -45,7 +45,7 @@
 
 /*  Col (image-list)  */
 .navigation {
-  background-color: rgb(242, 243, 247);
+  background-color: rgb(235, 238, 245);
   width: 22%;
   display: flex;
   flex-direction: column;
