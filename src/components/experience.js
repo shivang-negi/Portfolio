@@ -40,9 +40,10 @@ export default function Experience() {
                         <p className='job-heading'>ASSOCIATE SOFTWARE ENGINEER</p>
                         <p className='job-company'>Accenture</p>
                         <p className='job-timeline'>October 2023 - Present</p>
-                        <p className='job-point'>• Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p className='job-point'>• Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p className='job-point'>• Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <p className='job-point'>• Actively undergoing training on the MERN stack.</p>
+                        <p className='job-point'>• Participating in hands-on exercises and projects to gain practical experience in developing web applications using
+                        the MERN stack.</p>
+                        <p className='job-point'>• Leveraging the training to acquire a comprehensive understanding of MongoDB, Express.js, React.js, and Node.js.</p>
                     </div>
                 </div>
 

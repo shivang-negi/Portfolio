@@ -24,20 +24,14 @@ export default function Education() {
 
     function click1() {
         setShow1(!show1);
-        if (show2 === true) setShow2(false);
-        if (show3 === true) setShow3(false);
     }
 
     function click2() {
         setShow2(!show2);
-        if (show1 === true) setShow1(false);
-        if (show3 === true) setShow3(false);
     }
 
     function click3() {
         setShow3(!show3);
-        if (show2 === true) setShow2(false);
-        if (show1 === true) setShow1(false);
     }
 
     return (

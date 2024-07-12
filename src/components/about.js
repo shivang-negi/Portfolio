@@ -10,7 +10,7 @@ export default function About() {
                     <h5 className='headingrow1'>ABOUT</h5>
                     <h1 className='headingrow2'>WHO AM I?</h1>
                 </div>
-                <a href={resume} target='_blank' style={{ textDecoration: 'none' }} rel="noopener noreferrer" download={'resume-ShivangNegi.pdf'}>
+                <a href={resume} target='_blank' style={{ textDecoration: 'none' }} rel="noopener noreferrer" download={'Resume_ShivangNegi2.pdf'}>
                     <button type="button" className="resume-download">Download Resume</button>
                 </a>
             </div>
