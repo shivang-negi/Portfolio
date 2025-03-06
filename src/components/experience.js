@@ -23,8 +23,11 @@ export default function Experience() {
                         <p className='job-heading'>SOFTWARE INTERN</p>
                         <p className='job-company'>Samsung Research Institute</p>
                         <p className='job-timeline'>July 2022 - September 2022</p>
-                        <p className='job-point'>• Developed UI for desktop application using PyQt5 and QML, along with creating custom widgets for the application.</p>
-                        <p className='job-point'>• Envision and implement design strategies for various widgets and test the application minutely.</p>
+                        <p className='job-point'>• Designed and developed user interfaces for a desktop
+application using PyQt5 and QML, including the creation of several custom widget.</p>
+                        <p className='job-point'>• Reduced bug fixes by 40% through rigorous testing and
+optimization of widget implementations, leading to a more
+stable and reliable application.</p>
                         <p className='job-point'>• Explored working in a high paced environment.</p>
                     </div>
                 </div>
@@ -40,10 +43,12 @@ export default function Experience() {
                         <p className='job-heading'>ASSOCIATE SOFTWARE ENGINEER</p>
                         <p className='job-company'>Accenture</p>
                         <p className='job-timeline'>October 2023 - Present</p>
-                        <p className='job-point'>• Actively undergoing training on the MERN stack.</p>
-                        <p className='job-point'>• Participating in hands-on exercises and projects to gain practical experience in developing web applications using
-                        the MERN stack.</p>
-                        <p className='job-point'>• Leveraging the training to acquire a comprehensive understanding of MongoDB, Express.js, React.js, and Node.js.</p>
+                        <p className='job-point'>• Completed an intensive training program on Java Full stack
+                        focusing on Java, Spring Boot, React, and database management.</p>
+                        <p className='job-point'>• Collaborated with cross-functional teams to deliver software solutions aligned with client requirements and industry best practices.</p>
+                        <p className='job-point'>• Implemented features and enhancements in Java-based applications, adhering to project timelines and quality standards.</p>
+                        <p className='job-point'>• Engaged in Agile development processes, participating in
+                        sprint planning, daily stand-ups, and code reviews.</p>
                     </div>
                 </div>
 

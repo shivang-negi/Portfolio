@@ -4,22 +4,24 @@ export default function Projects() {
         <div id='Project' className='body-element'>
             <div className='exp-head'>
                 <div className='exp-heading'>
-                    <h1 className='headingrow2-exp' style={{margin:'auto',padding:'9% 0% 9% 0%'}}>PROJECTS</h1>
+                    <h1 className='headingrow2-exp' style={{ margin: 'auto', padding: '9% 0% 9% 0%' }}>PROJECTS</h1>
                 </div>
             </div>
 
             <div className='projects'>
-                
+
                 <div className='project-item'>
                     <div className='project-details'>
                         <h2 className='project-heading'>Smart Healthcare App</h2>
                         <h4 className='project-skills'>Flutter, NodeJS, ExpressJS, MongoDB, SQLite, Firebase, SocketIO</h4>
                         <ul className='project-points'>
-                            <li className='project-point'>Built a responsive application for Android that allows users to contact physicians and enables one-to-one chat functionality,
-along with the sharing of images and documents.</li>
-                            <li className='project-point'>Design a fully functional and dynamic front-end with Flutter.</li>
-                            <li className='project-point'>Integrated the machine learning prediction model into the application.</li>
-                            <li className='project-point'>Store client-side data using SQLite, and server-side data using MongoDB and Firebase.</li>
+                            <li className='project-point'>Built a responsive application that allows users to contact
+                                physicians and enables one-to-one chat functionality, along with
+                                the sharing of images and documents.</li>
+                            <li className='project-point'>Develop server-side functionality to manage user interactions, process requests, and handle real-time data. Integrated cloud
+                                Storage for efficient media storage and retrieval.</li>
+                            <li className='project-point'>Integrated a machine learning algorithm to analyze user symptoms in real-time, providing accurate results and enhancing
+                            the app’s diagnostic capabilities.</li>
                         </ul>
                     </div>
                     <img src={'project1.jpg'} className='project-image' alt='Cant load project image'></img>
@@ -32,7 +34,7 @@ along with the sharing of images and documents.</li>
                         <ul className='project-points'>
                             <li className='project-point'>Snake game website that keeps a scoreboard of high scores of different users in real-time.</li>
                             <li className='project-point'>It features a login and registration page for user authentication purposes. MongoDB is used to store user data, and
-the authentication is done on the server side.</li>
+                                the authentication is done on the server side.</li>
                             <li className='project-point'>SocketIO keeps the scoreboard in-sync with the live action, updating it instantly as the game progresses.</li>
                         </ul>
                     </div>
